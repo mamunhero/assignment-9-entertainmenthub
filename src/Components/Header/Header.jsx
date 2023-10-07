@@ -1,10 +1,11 @@
+import Banner from "./Banner/Banner";
 import Logo from "./Logo/Logo";
 
 const Header = () => {
   return (
     <div>
-      <h2 className="text-3xl">This is Header</h2>
       <Logo></Logo>
+      <Banner></Banner>
     </div>
   );
 };
