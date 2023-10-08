@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "picture": "https://i.ibb.co/rvD78ys/concert-musicians-lights-hands.jpg",
+    "name": "Live Music and Concerts",
+    "short_description": "Live music and concerts provide a captivating and unforgettable experience for music enthusiasts. These events showcase the raw talent and creativity of artists, offering a dynamic fusion of sound, energy, and emotion. Audiences immerse themselves in a vibrant atmosphere, connecting with performers on a profound level. From intimate acoustic sets to massive stadium shows, the diversity of live music caters to all tastes, genres, and moods. Concerts create a sense of unity, as fans from diverse backgrounds unite through their shared love for music. The anticipation, the roar of the crowd, and the electrifying performances make live music and concerts a thrilling and communal celebration of artistry.",
+    "price": "$49.99",
+    "details_button": "More Detailes"
+  },
+  {
+    "id": 2,
+    "picture": "https://i.ibb.co/L6MpXkM/download.webp",
+    "name": "Theater Productions",
+    "short_description": "Theater productions are a captivating art form that combines storytelling, performance, and creativity to bring stories to life on stage. These productions showcase the talent of actors, directors, designers, and crew members who work tirelessly to create immersive experiences. From classic plays to contemporary dramas, musicals to experimental performances, theater offers a wide range of genres and styles to cater to diverse audiences. The magic of live theater lies in its ability to elicit genuine emotions, provoke thought, and transport audiences to different worlds. It fosters a unique connection between performers and spectators, making each show a memorable and enriching cultural experience that continues to thrive in the modern age.",
+    "price": "$29.99",
+    "details_button": "More Detailes"
+  },
+  {
+    "id": 3,
+    "picture": "https://i.ibb.co/DtNgPqm/istockphoto-1149107202-612x612.jpg",
+    "name": "Sports Events",
+    "short_description": " Sports events are thrilling spectacles that unite fans worldwide in a celebration of athleticism and competition. From the adrenaline-pumping moments of victory to the heart-pounding suspense of close matches, these events offer a dynamic and emotional experience. A wide array of sports, from football and basketball to tennis and motorsports, provides something for every enthusiast. Sports events foster a sense of camaraderie among fans, transcending boundaries of culture and language. The stadiums and arenas become hives of energy, as fans cheer for their favorite teams and athletes. These events embody the spirit of teamwork, dedication, and the pursuit of excellence, making them an integral part of global culture.",
+    "price": "$79.99",
+    "details_button": "More Detailes"
+  },
+  {
+    "id": 4,
+    "picture": "https://i.ibb.co/ByBCGxM/istockphoto-1381030718-1024x1024.jpg",
+    "name": "Festivals",
+    "short_description": "Festival events are vibrant celebrations that showcase the rich tapestry of culture, art, and tradition. These gatherings bring communities together, offering a sensory explosion of music, dance, food, and visual displays. Whether it's a music festival featuring a diverse lineup of artists, a cultural festival highlighting heritage and customs, or a food festival tantalizing taste buds, festivals are a testament to human creativity and the joy of shared experiences. They often provide a platform for emerging talent and artisans, fostering creativity and cross-cultural understanding. Festivals are a global phenomenon, embracing diversity and igniting a sense of unity, making them an essential part of our collective human heritage.",
+    "price": "$59.99",
+    "details_button": "More Detailes"
+  },
+  {
+    "id": 5,
+    "picture": "https://i.ibb.co/rb1nsGg/comedyshow-624268526-1000.jpg",
+    "name": "Comedy Shows",
+    "short_description": "Comedy show events are uproarious occasions that revolve around humor, laughter, and entertainment. These gatherings feature comedians and stand-up performers who skillfully deliver jokes, anecdotes, and witty observations to captivated audiences. The atmosphere is charged with hilarity, as comedians tackle a wide range of topics, from everyday life and social issues to absurd and surreal humor. Comedy shows offer a much-needed escape from the daily grind, providing a therapeutic dose of laughter that lifts spirits and relieves stress. They create a sense of shared amusement, fostering connections through humor and wit. Comedy events are an opportunity to revel in the joy of laughter, making them a cherished form of entertainment for all ages.",
+    "price": "$19.99",
+    "details_button": "More Detailes"
+  },
+  {
+    "id": 6,
+    "picture": "https://i.ibb.co/0DMHvr2/istockphoto-1159032296-612x612.jpg",
+    "name": "Circus Performances",
+    "short_description": "Circus performances are mesmerizing spectacles that blend acrobatics, clowning, magic, and daring stunts under the big top. These events have a storied history, captivating audiences with the incredible skills and talents of circus performers. From high-flying trapeze acts to awe-inspiring animal shows, circus performances showcase human and animal abilities in an exhilarating manner. The colorful costumes, dazzling lights, and live music add to the enchanting atmosphere, transporting spectators to a world of wonder and fantasy. Circus events offer a thrilling experience for families and individuals alike, a testament to the enduring magic of the circus that continues to inspire awe and amazement.",
+    "price": "$99.99",
+    "details_button": "More Detailes"
+  }
+]
