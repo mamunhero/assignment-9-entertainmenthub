@@ -129,7 +129,7 @@ const Home = () => {
             </div>
             <h2 className="text-3xl font-bold mb-10">Light Up The Music</h2>
             <p className="text-xl font-medium mb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-            <button className="btn btn-primary">Buy Ticket</button>
+            <button className="btn btn-primary mb-5">Buy Ticket</button>
           </div>
           {/* second card */}
           <div className="mb-5">
@@ -146,7 +146,7 @@ const Home = () => {
             </div>
             <h2 className="text-3xl font-bold mb-10">The Magical Nights</h2>
             <p className="text-xl font-medium mb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-            <button className="btn btn-primary">Buy Ticket</button>
+            <button className="btn btn-primary mb-5">Buy Ticket</button>
           </div>
           {/* third card */}
           <div className="mb-5">
