@@ -7,7 +7,8 @@ import { FaMinus } from 'react-icons/fa';
 import upcoming from "../../src/assets/show-7.jpg"
 import upcomingtwo from "../../src/assets/show-6.jpg"
 import upcomingthree from "../../src/assets/show-4.jpg"
-import Footer from './../Components/Footer/Footer';
+
+
 
 
 const Home = () => {
