@@ -7,12 +7,13 @@ import { FaMinus } from 'react-icons/fa';
 import upcoming from "../../src/assets/show-7.jpg"
 import upcomingtwo from "../../src/assets/show-6.jpg"
 import upcomingthree from "../../src/assets/show-4.jpg"
+import Footer from './../Components/Footer/Footer';
 
 
 const Home = () => {
   const [card, setCard] = useState([]);
   useEffect(() => {
-    fetch("data.json")
+    fetch("/data.json")
       .then(response => response.json())
       .then(data => setCard(data))
   }, []);
@@ -105,8 +106,11 @@ const Home = () => {
         {
           <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {
-              card.map((cardDetailes)=>  <CardInfo
-              key={cardDetailes.id} cardDetailes={cardDetailes}></CardInfo>)
+              card.map((cardDetailes)=>  
+              <CardInfo
+                key={cardDetailes.id} 
+                cardDetailes={cardDetailes}
+              ></CardInfo>)
             }
           </div>
         }

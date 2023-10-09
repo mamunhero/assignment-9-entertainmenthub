@@ -3,10 +3,13 @@ import Footer from "../Components/Footer/Footer";
 
 const Root = () => {
   return (
-    <div className="max-w-7xl mx-auto font-poppins">
+    <div>
+     <div className="max-w-7xl mx-auto">
       <Outlet></Outlet>
+     </div>
       <Footer></Footer>
     </div>
+    
   );
 };
 

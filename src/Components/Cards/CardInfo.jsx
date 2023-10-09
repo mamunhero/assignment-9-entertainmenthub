@@ -1,7 +1,10 @@
+import { Link } from "react-router-dom";
+
 
 const CardInfo = ({cardDetailes}) => {
   // console.log(cardDetailes);
-  const {id, picture, name, short_description, price, details_button} = cardDetailes;
+  const { id, picture, name, short_description, price } = cardDetailes || {}
+  
   return (
     <div>
       <div className="card card-compact h-full bg-base-100 shadow-xl">
@@ -13,7 +16,9 @@ const CardInfo = ({cardDetailes}) => {
     <p className="text-justify">{short_description}</p>
     <span className="font-bold text-xl">Price:{price}</span>
     <div className="card-actions">
-      <button className="btn btn-primary w-full">Detailes</button>
+      <Link to={`/data/${id}`}>
+        <button className="btn btn-primary w-full">Detailes</button>
+      </Link>
     </div>
   </div>
 </div>
@@ -22,4 +27,8 @@ const CardInfo = ({cardDetailes}) => {
 };
 
 export default CardInfo;
+
+
+
+
 
