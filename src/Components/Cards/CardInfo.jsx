@@ -17,7 +17,7 @@ const CardInfo = ({cardDetailes}) => {
     <span className="font-bold text-xl">Price:{price}</span>
     <div className="card-actions">
       <Link to={`/data/${id}`}>
-        <button className="btn btn-primary w-full">Detailes</button>
+        <button className="btn btn-primary">Detailes</button>
       </Link>
     </div>
   </div>

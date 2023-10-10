@@ -1,29 +1,42 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Logo from "../../Components/Header/Logo/Logo";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { useContext } from "react";
+import swal from "sweetalert";
+
 
 const Login = () => {
-  const {createSignIn, googleSignIn} = useContext(AuthContext)
+  const {createSignIn, googleSignIn} = useContext(AuthContext);
+  const location = useLocation();
+  // console.log(location);
+  const navigate = useNavigate();
   const handleLogin = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
     console.log(email, password);
-    createSignIn(email, password)
-    .then(result=> {
-      console.log(result);
+    if (email, password) {
+      createSignIn(email, password)
+      .then(result=> {
+      console.log(result.user);
+      swal("Good Job!", "Login is suceessful", "success")
+      // navigate
+      navigate(location?.state ? location.state : "/")
     })
     .catch(error=> {
-      console.log(error);
+      console.log(error.message);
+      swal( "Error",error.message, "error")
     })
   }
+      
+    }
+    
 
   // googlesignIn
   const handleGoogleLogin = () => {
     googleSignIn()
     .then(result=> {
-      console.log(result);
+      console.log(result.user);
     })
     .catch(error=> {
       console.log(error);
@@ -48,14 +61,13 @@ const Login = () => {
             <span className="label-text">Password</span>
           </label>
           <input type="password" placeholder="password" className="input input-bordered" name="password" required />
-          <label className="label">
-            <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
-          </label>
         </div>
         <div className="form-control mt-6">
-          <button className="btn btn-primary">Login</button>
-          <button onClick={handleGoogleLogin} className="btn btn-primary mt-4">Google Login</button>
+         
+            <button className="btn btn-primary w-full">Login</button>
+          
         </div>
+        <button onClick={handleGoogleLogin} className="btn btn-primary mt-4 w-full">Google Login</button>
       </form>
       <p className="text-center mt-5 text-2xl ">Donot Have An Account ? <Link className="text-blue-500 font-bold text-2xl" to="/register">Register</Link></p>
       </div>

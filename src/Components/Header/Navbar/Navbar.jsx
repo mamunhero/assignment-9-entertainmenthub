@@ -42,6 +42,12 @@ const Navbar = () => {
           </button>
         </NavLink>
       )}
+       {user && <div>
+            <p>{user?.displayName}</p>
+            <p>{user?.email}</p>
+            <img src={user?.photoUrl} alt="" />
+          </div> 
+       }
         </ul>
       </nav>
       
@@ -50,7 +56,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
 
 
 

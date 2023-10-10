@@ -7,6 +7,7 @@ import Services from "../Pages/Services/Services";
 import Tickets from "../Pages/Tickets/Tickets";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
+import PrivateRoute from "./PrivateRoute";
 const Route = createBrowserRouter([
   {
     path: "/",
@@ -19,7 +20,7 @@ const Route = createBrowserRouter([
       },
       {
         path: "/data/:id",
-        element: <SingleCard></SingleCard>
+        element: <PrivateRoute><SingleCard></SingleCard></PrivateRoute>
       },
       {
         path: "/event",
