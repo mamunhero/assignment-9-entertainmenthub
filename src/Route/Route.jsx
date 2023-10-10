@@ -8,10 +8,12 @@ import Tickets from "../Pages/Tickets/Tickets";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import PrivateRoute from "./PrivateRoute";
+import Error from "../Pages/ErrorPage/Error";
 const Route = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <Error></Error>,
     children: [
       {
         path: "/",
