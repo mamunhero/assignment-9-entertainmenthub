@@ -9,6 +9,8 @@ import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import PrivateRoute from "./PrivateRoute";
 import Error from "../Pages/ErrorPage/Error";
+import Blog from "../Pages/Blog/Blog";
+import Gallery from "../Pages/Gallery/Gallery";
 const Route = createBrowserRouter([
   {
     path: "/",
@@ -30,7 +32,7 @@ const Route = createBrowserRouter([
       },
       {
         path: "/services",
-        element: <Services></Services>
+        element: <PrivateRoute><Services></Services></PrivateRoute>
       },
       {
         path: "/tickets",
@@ -43,6 +45,14 @@ const Route = createBrowserRouter([
       {
         path: "/register",
         element: <Register></Register>
+      },
+      {
+        path: "/blog",
+        element: <Blog></Blog>
+      },
+      {
+        path: "/gallery",
+        element: <Gallery></Gallery>
       }
     ]
   }

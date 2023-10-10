@@ -20,6 +20,7 @@ const Login = () => {
       .then(result=> {
       console.log(result.user);
       swal("Good Job!", "Login is suceessful", "success")
+      e.target.reset();
       // navigate
       navigate(location?.state ? location.state : "/")
     })

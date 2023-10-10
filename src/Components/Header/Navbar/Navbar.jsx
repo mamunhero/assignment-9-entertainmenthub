@@ -28,6 +28,16 @@ const Navbar = () => {
           <li>
             <NavLink to="/services" className={({isActive, isPending})=>isPending ? "pending" : isActive ? "text-[#FF444A] underline text-2xl" : " text-2xl font-normal text-black"}>Services</NavLink>
           </li>
+          {
+            user && <>
+              <li>
+                <NavLink to="/blog" className={({isActive, isPending})=>isPending ? "pending" : isActive ? "text-[#FF444A] underline text-2xl" : " text-2xl font-normal text-black"}>Blog</NavLink>
+              </li>
+              <li>
+                <NavLink to="/gallery" className={({isActive, isPending})=>isPending ? "pending" : isActive ? "text-[#FF444A] underline text-2xl" : " text-2xl font-normal text-black"}>Gallery</NavLink>
+              </li>
+            </>
+          }
           <li>
             <NavLink to="/tickets" className={({isActive, isPending})=>isPending ? "pending" : isActive ? "text-[#FF444A] underline text-2xl" : " text-2xl font-normal text-black"}>Tickets</NavLink>
           </li>
@@ -42,11 +52,11 @@ const Navbar = () => {
           </button>
         </NavLink>
       )}
-       {user && <div>
+       {user && <>
             <p>{user?.displayName}</p>
             <p>{user?.email}</p>
             <img src={user?.photoUrl} alt="" />
-          </div> 
+          </> 
        }
         </ul>
       </nav>
